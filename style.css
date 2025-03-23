@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    background-color: rgb(43, 4, 80);
+}
+
+nav {
+    background-color: black;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Espaço padrão */
+    padding: 0;
+    list-style: none;
+}
+
+.nav-logo {
+    height: 15rem; 
+}
+
+.nav-btn {
+    background-color: crimson;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid blue;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+
+nav ul li:first-child {
+    margin-right: 5rem;
+}
+
+nav ul li:last-child {
+    margin-left: 5rem;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.main-content{
+
+}
+
+.welcome-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Espaço entre o ícone e o texto */
+    width: fit-content;
+    margin: 2rem auto 0; /* Centraliza horizontalmente e dá espaço da navbar */
+    padding: 0.8rem 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.308); /* Borda transparente */
+    border-radius: 50px;
+    backdrop-filter: blur(10px); /* vrido */
+    color: rgba(255, 255, 255, 0.308);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.banner-logo {
+    height: 24px; /* Ajusta o tamanho do ícone */
+}
+
+.hero-section {
+    text-align: center; /* Centraliza tudo */
+    padding: 4rem 2rem; /* Espaçamento interno */
+    color: white; /* Texto branco */
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.hero-section h1 span {
+    color: #862aff;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 1rem auto;
+    opacity: 0.8;
+}
+
+.cta-button {
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: 2px solid #862aff;
+    border-radius: 50px;
+    /* text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s; */
+}
+/* .cta-button:hover {
+    background: #862aff;            TALVEZ?????
+} */
+.features-section{
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Espaço padrão */
+    padding: 0;
+}
+.outer-border{
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.144);
+}
+.feature-card{
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    border-radius: 2rem;
+    padding: 1rem;
+}
