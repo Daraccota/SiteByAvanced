@@ -123,8 +123,9 @@ nav ul li a {
 .welcome-banner {
   display: flex;
   align-items: center;
+  justify-content: flex-start; /* Alinha a imagem à esquerda */
   gap: 1rem; /* Espaço entre o ícone e o texto */
-  width: fit-content;
+  width: 15rem;
   margin: 2rem auto 0; /* Centraliza horizontalmente e dá espaço da navbar */
   padding: 0rem 2rem;
   border: 2px solid rgba(255, 255, 255, 0.308); /* Borda transparente */
@@ -133,11 +134,19 @@ nav ul li a {
   color: rgba(255, 255, 255, 0.425);
   font-size: 0.9rem;
   font-weight: bold;
+  position: relative;
+}
+
+.welcome-banner span {
+  flex-grow: 1; /* Faz o texto ocupar o espaço restante */
+  text-align: center; /* Centraliza o texto */
 }
 
 .banner-logo {
-  height: 24px; /* Ajusta o tamanho do ícone */
+  height: 4vh; /* Ajusta o tamanho do ícone */
+  opacity: 0.5; 
 }
+
 
 .hero-section {
   text-align: center; /* Centraliza tudo */
@@ -261,196 +270,140 @@ nav ul li a {
 
 /* parte 2 do site */
 .parte2 {
-  display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  height: 100vh; /* Define a altura da página como 100% da viewport */
-  margin: 0;
-
-  background-color: rgb(0, 0, 0);
+  justify-items: center;
+  min-height: 100vh; /* Garantir que a altura mínima seja sempre adequada */
+  padding: 2rem;
+  background-color: black;
 }
 
 .commitment-container {
   display: flex;
-  margin-top: -20vw;
-  height: 37%;
-  width: 67%;
-  gap: 23px;
+  flex-wrap: wrap; /* Permite que os itens quebrem para outra linha em telas menores */
   align-items: center;
+  width: 75%;
+  gap: 1.5rem;
+  padding: 0.9rem;
   background-color: black;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.144);
+
   font-family: "GlacialIndifference";
 }
+
 .box {
   color: aliceblue;
-  background: transparent;
+  background: linear-gradient(135deg, #040426, #1a1a5073);
   border: 2px solid #7209b7;
-  padding: 20px;
+  padding: 1.5rem;
   border-radius: 10px;
+  width: 45%;
   max-width: 350px;
   text-align: left;
-  background: linear-gradient(135deg, #040426, #1a1a5073);
   box-shadow: 0 0 10px rgba(114, 9, 183, 0.5);
-  font-family: "GlacialIndifference";
 }
-.highlight {
-  color: #7209b7;
+.box1 h2{
+  display: flex;
 }
+.box1 p{
+  text-align: justify;
+  font-family: "NexaLight", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 599;
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 90%; /* Ocupa mais espaço na tela em dispositivos menores */
+  }
+}
+
 .commitment {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   color: aliceblue;
 }
+
 .commitment h3 {
   border: 2px solid #7209b7;
   background: linear-gradient(135deg, #040426, #1a1a5073);
   padding: 10px;
   border-radius: 20px;
-  display: inline-block;
-}
-.commitment-details {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-.commitment-details p {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.commitment-details p br {
-  display: none;
-}
-.commitment-details p span {
-  display: block;
-  margin-top: -5px;
 }
 
-/* parte 2 do site */
-.parte2 {
-  display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  height: 100vh; /* Define a altura da página como 100% da viewport */
-  margin: 0;
-  background-color: rgb(0, 0, 0);
-}
-
-.commitment-container {
-  display: flex;
-  margin-top: -20vw;
-  height: 30%;
-  width: 67%;
-  gap: 23px;
-  align-items: center;
-  background-color: black;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  font-family: "GlacialIndifference";
-}
-.box {
-  color: aliceblue;
-  background: transparent;
-  border: 2px solid #7209b7;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 350px;
-  max-height: 160px;
-  text-align: left;
-  background: linear-gradient(135deg, #040426, #1a1a5073);
-  box-shadow: 0 0 10px rgba(114, 9, 183, 0.5);
-  font-family: "GlacialIndifference";
-}
-.box1 {
-  margin-top: -30px;
-}
-.box1 h2 {
-  text-align: center;
-}
-.box1 hr {
-  width: 270px;
-}
-.highlight {
-  color: #862aff;
-}
-.commitment {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: aliceblue;
-}
-.commitment h3 {
-  border: 2px solid #7209b7;
-  background: linear-gradient(135deg, #040426, #1a1a5073);
-  padding: 10px;
-  border-radius: 20px;
-  display: inline-block;
-}
 .commitment-details {
+  text-align: justify;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap; /* Faz com que os elementos quebrem para outra linha se necessário */
+  justify-content: center;
+  gap: 1rem;
   width: 100%;
-  margin-top: 10px;
-  font-size: 18px;
+  font-size: 2rem;
   font-weight: bold;
 }
-.commitment-details p {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.commitment-details p br {
-  display: none;
-}
-.commitment-details p span {
-  display: block;
-  margin-top: -5px;
-}
+
+
 
 /* DIVS COLORIDAS */
-
+.about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  
+}
+.about-text{
+  color: white;
+}
+.about-text h1{
+  display: flex;
+  font-family: "NexaHeavy", sans-serif;
+  font-size: 2.5rem;
+}
+.about-text span{
+  font-family: "NexaLight", sans-serif;
+}
+.by{
+  color: #7830ff;
+}
+.about-text .cta-button{
+  display: flex;
+  margin-top: 1rem;
+}
 .Containerr {
-  position: absolute;
+  position: relative;
   display: flex;
   align-items: center;
-  left: 0;
-  margin-top: 100px;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 5vh; /* Espaçamento proporcional à altura da tela */
 }
+
 .Box {
-  position: absolute;
+  position: relative;
 }
+
 .box-light {
-  width: 350px;
-  height: 180px;
-  border-top-right-radius: 20px;
+  width: 40vw; /* 40% da largura da tela */
+  height: 40vh; /* 20% da altura da tela */
+  border-top-right-radius: 1.25rem;
   background: linear-gradient(90deg, #7a30f2, #3c6ef7);
-  left: 0;
-  top: 0;
   z-index: 1;
 }
+
 .box-dark {
-  width: 250px;
-  height: 160px;
-  border-radius: 20px;
+  width: 30vw;
+  height: 35vh;
+  border-radius: 1rem;
   background-color: #040426;
-  border: 2px solid #3c6ef7;
-  left: 170px;
-  top: 50px;
+  border: 0.15rem solid #3c6ef7;
+  position: absolute;
+  top: 20%;
+  left: 30%;
   z-index: 2;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0.25rem 1rem rgba(0, 0, 0, 0.3);
 }
+
 
 /*campo_de_entrada_de_texto*/
