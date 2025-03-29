@@ -133,19 +133,24 @@ nav ul li a {
 .welcome-banner {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Alinha a imagem à esquerda */
+  justify-content: center; /* Centraliza horizontalmente */
   gap: 1rem; /* Espaço entre o ícone e o texto */
   width: 15rem;
-  margin: 2rem auto 0; /* Centraliza horizontalmente e dá espaço da navbar */
+  
+  /* Em vez de margin */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+
   padding: 0rem 2rem;
   border: 2px solid rgba(255, 255, 255, 0.308); /* Borda transparente */
   border-radius: 50px;
-  backdrop-filter: blur(10px); /* vrido */
+  backdrop-filter: blur(10px); /* Vidro */
   color: rgba(255, 255, 255, 0.425);
   font-size: 0.9rem;
   font-weight: bold;
-  position: relative;
 }
+
 
 .welcome-banner span {
   flex-grow: 1; /* Faz o texto ocupar o espaço restante */
@@ -362,6 +367,9 @@ nav ul li a {
 .about-text {
   color: white;
 }
+.about-text .welcome-banner{
+  margin-top: 2rem;
+}
 .about-text h1 {
   display: flex;
   font-family: "NexaHeavy", sans-serif;
@@ -427,44 +435,30 @@ body {
   font-family: "GlacialIndifference", sans-serif;
 }
 
-.spans {
-  display: inline-block;
-  padding: 10px 20px;
-  border: 1px solid #888; /* Cor da borda similar à da imagem */
-  border-radius: 25px; /* Bordas arredondadas */
-  background-color: #1a1a1a; /* Fundo escuro, como no botão da imagem */
-  color: #888; /* Cor cinza para o texto */
-  font-family: Arial, sans-serif; /* Fonte do texto */
-  font-size: 16px; /* Tamanho da fonte ajustado */
-  text-align: center;
-}
-
-.spans::before {
-  content: "A"; /* Ícone da letra estilizada à esquerda */
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #888; /* Cor cinza para o ícone */
-  margin-right: 10px; /* Espaço entre o ícone e o texto */
-}
-
 .parte3 {
   justify-items: center;
   min-height: 100vh;
-  padding: 2rem;
+
   background-color: black;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  
+
   gap: 1.5rem;
-  border-radius: 30px;
+}
+
+.parte3 .welcome-banner{
+  
 }
 
 .grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+
+  align-content: center;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
+  padding: 2rem;
 }
 
 .pa1 {
@@ -491,20 +485,26 @@ body {
 }
 
 #gradient-separati {
-  width: 140%;
+  align-self: center;
+  display: flex;
+  width: 100%;
   height: 50px;
   background: linear-gradient(to right, #7326f793, #3c6ef781);
-  margin: 3rem;
+
 }
 
 /* Parte 4 - Nova Seção */
-.parte4 {
+.parte4-content{
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   padding: 3rem;
   position: relative;
+}
+.parte4 {
+  background-color: #000;
 }
 
 .parte4-texto {
@@ -611,17 +611,18 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.parte4-footer {
+/* .parte4-footer {
   width: 140%;
   height: 40px;
   background: linear-gradient(to right, #7426f7, #3c6ef7);
   margin-top: 3rem;
-}
+} */
+ 
 /* FOOTER DO SITE!*/
 .footer {
   background-color: #0a0a0a;
   color: #f5f5f5;
-  padding: 3rem 2rem;
+  /* padding: 3rem 2rem; */
   text-align: center;
 }
 
@@ -637,20 +638,21 @@ body {
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: 1rem;
+
   color: #fff;
 }
-
-.footer-logo span {
-  color: #6ee7b7; /* Cor de destaque */
+.footer-logo img{
+  height: 15rem;
+  width:  15rem;
 }
 
 .footer-links {
+  color: white;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
+
 }
 
 .footer-links a {
@@ -669,6 +671,12 @@ body {
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 2rem;
+
+}
+
+.footer-social img{
+  height: 2rem;
+  width: 2rem;
 }
 
 .footer-social a {
@@ -695,13 +703,37 @@ body {
 }
 
 /* Efeito de onda opcional */
-.footer-wave {
-  height: 50px;
-  width: 100%;
-  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%230a0a0a" opacity=".25"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="%230a0a0a" opacity=".5"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%230a0a0a"/></svg>')
-    no-repeat;
+.footer-wave-flip {
+  height: 2rem;
+  display: flex;
+  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%237326f793" opacity=".25"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="%237326f793" opacity=".5"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%237326f793"/></svg>') 
+  no-repeat;
   background-size: cover;
-  margin-bottom: -1px; /* Remove pequeno espaço */
+  transform: scaleY(-1); /* Faz o flip vertical */
+  z-index: -1;
+}
+.footer-wave {
+  height: 8rem;
+  display: flex;
+  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%237326f793" opacity=".25"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="%237326f793" opacity=".5"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%237326f793"/></svg>') 
+  no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.footer-wrapper {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+.footer-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black; /* Cor de fundo preta */
+  z-index: -2; /* Coloca o fundo atrás de tudo */
 }
 
 /* Responsivo */
