@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
   </head>
   <body>
     <nav>
@@ -111,7 +113,9 @@
         <div class="Containerr">
 
           <div class="Box box-light"></div>
-          <div class="Box box-dark"></div>
+          <div class="Box box-dark">
+            <span id="typed-text"></span>
+          </div>
 
         </div>
 
@@ -149,9 +153,46 @@
 
         <h2>TRAZEMOS INOVAÇÃO PARA O MERCADO E <br>SOLUÇÕES PARA SEU NEGOCIO.</h2>
         <div class="grid">
-            <div class="pa1"></div>
-            <div class="pa1"></div>
-            <div class="pa1"></div>
+
+            <div class="service-card">
+              <h2>Consultoria de<br>Software</h2>
+              <hr>
+              <p>A consultoria de softwares da ByAvanced oferece treinamentos e suporte para empresas e 
+                profissionais que desejam otimizar seu trabalho com ferramentas essenciais. Ensinamos desde
+                <span class="destaque">pacotes Office (Word, Excel, PowerPoint) até plataformas de gestão 
+                como Jira, Trello, Notion e outras</span>. 
+                O objetivo é capacitar os usuários para que utilizem esses softwares de forma eficiente, 
+                aumentando a produtividade e 
+                <span class="destaque">melhorando a organização dos processos</span>.
+              </p>
+              <hr>
+            </div>
+
+            <div class="service-card">
+              <h2>Treinamento <br>de IA</h2>
+              <hr>
+              <p>O treinamento de <span class="destaque">IA para negócios</span> da ByAvanced 
+                <span class="destaque">capacita empresas a aplicar inteligência artificial para otimizar processos</span>, 
+                analisar dados e melhorar a tomada de decisões. Com abordagens
+                <span class="destaque">práticas e teóricas</span>, ajudamos os participantes a integrar IA de forma 
+                <span class="destaque">eficaz, impulsionando a inovação e a competitividade</span>.
+              </p>
+              <hr>
+            </div>
+
+            <div class="service-card">
+              <h2>Imersão <br>no Marketing Digital</h2>
+              <hr>
+              <p>A imersão em marketing digital da ByAvanced oferece um <span class="destaque">treinamento prático</span> 
+                sobre os fundamentos do marketing digital, ajudando empresas a entender e aplicar 
+                <span class="destaque">estratégias para crescer online</span>. Ensinamos desde o básico, como 
+                <span class="destaque">SEO, redes sociais e e-mail marketing, até conceitos para otimizar campanhas, 
+                  aumentar a visibilidade e engajar o público</span>. O objetivo é capacitar as empresas a aprimorar 
+                  suas ações digitais e alcançar melhores resultados.
+              </p>
+              <hr>
+            </div>
+
         </div>
     </div>
 
@@ -164,7 +205,7 @@
         <div class="parte4-texto">SOLUÇÕES SOB MEDIDA PARA SUA EMPRESA</div>
         <div class="parte4-container">
             <div class="parte4-bg"></div>
-            <div class="parte4-card">
+            <div class="service-card">
               <h2>Desenvolvimento <br>de Software</h2>
               <hr>
               <p>O processo inclui <span class="destaque">reuniões estratégicas</span> para entender o projeto em profundidade, <span class="destaque">design intuitivo</span> para proporcionar uma experiência fluida, <span class="destaque">desenvolvimento completo com front-end e back-end integrados</span>, além de testes rigorosos para garantir máxima <span class="destaque">segurança, desempenho e compatibilidade</span>. Após a entrega, ofereceremos <span class="destaque">suporte contínuo e atualizações por 1 mês</span>, garantindo que o software esteja otimizado e alinhado às necessidades do cliente nesse período.
@@ -175,10 +216,9 @@
               <h3>Suport ✔</h3>
               <h3>Acessibilidade ✔</h3>
               <h3>Resultado ✔</h3>
-              
             </div>
 
-            <div class="parte4-card">
+            <div class="service-card">
               <h2>Manutenção de <br>Software</h2>
               <hr>
               <p>A manutenção de software garante que o sistema continue funcional, seguro e atualizado. Ela pode ser <span class="destaque">corretiva</span> (correção de bugs), <span class="destaque">preventiva</span> (melhoria da estabilidade), <span class="destaque">evolutiva</span> (novas funcionalidades) ou <span class="destaque">adaptativa</span> (ajustes para novas demandas). Com esse serviço, o software <span class="destaque">mantém alto desempenho</span> e acompanha a evolução do negócio.
@@ -215,9 +255,8 @@
 
         <div class="footer-social">
           <a href="https://www.instagram.com/byavanced/"><img src="img/instagram-logo.png" alt="" srcset=""><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"><img src="img/youtube.png" alt="" srcset=""></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/@byavanced"><i class="fab fa-youtube"><img src="img/youtube.png" alt="" srcset=""></i></a>
+          <a href="https://www.tiktok.com/@byavanced.startup?_t=ZM-8soVCRmWiTl&_r=1"><img src="img/tik-tok.png" alt="" srcset=""><i class="fab fa-tiktok"></i></a>
         </div>
 
         <div class="footer-divider"></div>
@@ -228,10 +267,12 @@
       </div>
     </footer>
 
-    <!-- Font Awesome para ícones -->
+   
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
+    
+    <script src="js/typingEffect.js"></script>
   </body>
 </html>
