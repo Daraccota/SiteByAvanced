@@ -203,9 +203,6 @@ nav ul li a {
 }
 
 
-.main-content {
-}
-
 .welcome-banner {
   display: flex;
   align-items: center;
@@ -227,8 +224,16 @@ nav ul li a {
   font-weight: bold;
 }
 
+.main-content {
+  margin: 10rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
 .welcome-banner img {
-  max-width: 30vw;
+  max-width: 3vw;
   height: auto;
 }
 
@@ -367,6 +372,7 @@ nav ul li a {
 }
 
 .tag-bar {
+  margin: 0;
   margin-top: 3rem;
   background-color: #060637;
   height: auto; /* Permite que a altura se ajuste ao conteúdo */
@@ -401,7 +407,13 @@ nav ul li a {
 
 
 /* parte 2 do site */
+.background{
+  background-color: #000;
+}
 #parte2 {
+  margin: 10rem;
+  margin-top: 0;
+  margin-bottom: 0;
   justify-items: center;
   min-height: 100vh; /* Garantir que a altura mínima seja sempre adequada */
   padding: 2rem;
@@ -493,6 +505,7 @@ nav ul li a {
   display: flex;
   font-family: "NexaHeavy", sans-serif;
   font-size: 2.5rem;
+  flex-wrap: wrap;
 }
 .about-text span {
   font-family: "NexaLight", sans-serif;
@@ -523,6 +536,7 @@ nav ul li a {
   border-top-right-radius: 1.25rem;
   background: linear-gradient(90deg, #7a30f2, #3c6ef7);
   z-index: 1;
+  left: -24%;
 }
 
 .box-dark {
@@ -533,7 +547,7 @@ nav ul li a {
   border: 0.15rem solid #3c6ef7;
   position: absolute;
   top: 20%;
-  left: 30%;
+  left: 11%;
   z-index: 2;
   box-shadow: 0px 0.25rem 1rem rgba(0, 0, 0, 0.3);
 }
@@ -566,7 +580,9 @@ body {
 #parte3 {
   justify-items: center;
   min-height: 100vh;
-
+  margin: 10rem;
+  margin-top: 0;
+  margin-bottom: 0;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -583,7 +599,7 @@ body {
 
   align-content: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   padding: 2rem;
 }
 
@@ -613,6 +629,7 @@ body {
 #gradient-separati {
   align-self: center;
   display: flex;
+  margin-bottom: 2%;
   width: 100%;
   height: 50px;
   background: linear-gradient(to right, #7326f793, #3c6ef781);
@@ -1151,5 +1168,28 @@ body {
   .commitment-details {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 768px){
+  .main-content{
+    margin: 0;
+  }
+  #parte2{
+    margin: 0rem;
+  }
+  #parte3{
+    margin: 0;
+  }
+}
+@media (max-width: 480px){
+  .main-content{
+    margin: 0;
+  }
+  #parte2{
+    margin: 0;
+  }
+  #parte3{
+    margin: 0;
   }
 }
