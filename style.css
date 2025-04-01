@@ -97,7 +97,11 @@ nav ul {
   right: -2px;
   bottom: -2px;
   border-radius: 50px;
-  background: linear-gradient(90deg, rgba(120, 48, 255, 1) 0%, rgba(67, 103, 226, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 48, 255, 1) 0%,
+    rgba(67, 103, 226, 1) 100%
+  );
   z-index: -2;
 }
 
@@ -115,17 +119,17 @@ nav ul {
 }
 
 nav ul li:first-child {
-  margin-right: 5rem;
+  margin-right: 1rem;
 }
 
 nav ul li:last-child {
-  margin-left: 5rem;
+  margin-left: 1rem;
 }
 
 nav ul li a {
   color: aliceblue;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 /* Estilo do hambúrguer */
@@ -170,7 +174,6 @@ nav ul li a {
   }
 }
 
-
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
   nav ul {
@@ -203,7 +206,6 @@ nav ul li a {
   }
 }
 
-
 .welcome-banner {
   display: flex;
   align-items: center;
@@ -231,8 +233,6 @@ nav ul li a {
   margin-bottom: 0;
 }
 
-
-
 .welcome-banner img {
   max-width: 3vw;
   height: auto;
@@ -246,7 +246,6 @@ nav ul li a {
 .banner-logo {
   height: 4vh; /* Ajusta o tamanho do ícone */
   opacity: 0.5;
-  
 }
 
 .banner-logo {
@@ -271,7 +270,6 @@ nav ul li a {
     max-height: 60px;
   }
 }
-
 
 .hero-section {
   text-align: center; /* Centraliza tudo */
@@ -407,9 +405,8 @@ nav ul li a {
   }
 }
 
-
 /* parte 2 do site */
-.background{
+.background {
   background-color: #000;
 }
 #parte2 {
@@ -448,6 +445,7 @@ nav ul li a {
   text-align: left;
   box-shadow: 0 0 10px rgba(114, 9, 183, 0.5);
 }
+
 .box1 h2 {
   display: flex;
 }
@@ -506,11 +504,14 @@ nav ul li a {
 .about-text h1 {
   display: flex;
   font-family: "NexaHeavy", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   flex-wrap: wrap;
 }
 .about-text span {
   font-family: "NexaLight", sans-serif;
+}
+.about .about-text {
+  margin-top: 100px;
 }
 .by {
   color: #7830ff;
@@ -931,12 +932,12 @@ body {
     align-items: center;
   }
 
-  .grid{
+  .grid {
     gap: 3rem;
     padding: 0rem;
   }
 
-  .service-card{
+  .service-card {
     max-width: 280px;
     height: auto;
     padding: 1rem;
@@ -948,25 +949,24 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  #parte3{
+  #parte3 {
     min-height: 70vh;
   }
 
-  .box-light{
+  .box-light {
     height: 35vh;
   }
-  .box-dark{
-    height: 30vh
+  .box-dark {
+    height: 30vh;
   }
 
-  .about-text h1{
+  .about-text h1 {
     display: block;
   }
 
-  .about-text span{
+  .about-text span {
     font-size: 1.6rem;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -1100,8 +1100,6 @@ body {
     align-items: center;
     gap: 10px;
   }
-
-  
 }
 
 @media (max-width: 768px) {
@@ -1110,7 +1108,7 @@ body {
     padding: 30px 15px;
     text-align: center;
   }
-  .parte4-content{
+  .parte4-content {
     padding: 0rem;
   }
 
@@ -1141,21 +1139,20 @@ body {
   }
 
   .service-card {
-    max-width: 100rem; 
+    max-width: 100rem;
     padding: 2rem; /* Aumenta o espaçamento interno */
     box-sizing: border-box;
     margin: 0 auto 2rem; /* Centraliza o card e dá espaçamento */
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-   }
-  
+  }
+
   .service-card h2 {
     font-size: 1.25rem; /* Ajusta o tamanho do título para ser mais responsivo */
   }
 
-  .parte4 .service-card p
-  .parte4 .service-card h3 {
+  .parte4 .service-card p .parte4 .service-card h3 {
     font-size: 14px; /* Ajuste no tamanho da fonte do texto */
     line-height: 1.4; /* Mais espaçamento entre as linhas */
   }
@@ -1173,25 +1170,31 @@ body {
   }
 }
 
-@media (max-width: 768px){
-  .main-content{
+@media (max-width: 768px) {
+  .main-content {
     margin: 0;
   }
-  #parte2{
+  #parte2 {
     margin: 0rem;
   }
-  #parte3{
+
+  #parte3 {
     margin: 0;
   }
 }
-@media (max-width: 480px){
-  .main-content{
+@media (max-width: 480px) {
+  .main-content {
     margin: 0;
   }
-  #parte2{
+  #parte2 {
     margin: 0;
   }
-  #parte3{
+  .nav-btn {
+    text-align: center;
+    right: 50px;
+  }
+
+  #parte3 {
     margin: 0;
   }
 }
@@ -1214,22 +1217,22 @@ body {
 /* Ajustes responsivos */
 @media (max-width: 1024px) {
   .container {
-      padding: 15px;
+    padding: 15px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-      padding: 10px;
+    padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-      padding: 10px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -1242,7 +1245,7 @@ body {
 
 @media (max-width: 480px) {
   .logo {
-      max-width: 60%;
+    max-width: 60%;
   }
 }
 
@@ -1264,9 +1267,9 @@ body {
 
 @media (max-width: 480px) {
   .login-btn {
-      padding: 10px 20px;
-      font-size: 16px;
-      width: 100%;
-      max-width: 300px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
   }
 }
