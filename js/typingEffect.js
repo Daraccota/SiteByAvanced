@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
       backSpeed: 30, // Velocidade de apagar
       backDelay: 2000, // Tempo antes de apagar
       startDelay: 500, // Tempo antes de começar
-      loop: true // Repete infinitamente
+      loop: true, // Repete infinitamente
+      showCursor: false // Remove o cursor piscante
     });
   });
   
