@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "scripts": {
+    "build": "powershell -Command \"Copy-Item -Recurse -Path * -Destination dist -Exclude node_modules,dist\""
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Daraccota/SiteByAvanced.git"

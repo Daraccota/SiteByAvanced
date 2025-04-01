@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:export-filename="LogoVetorizada-Simbolo+Nome.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px" /><defs
+     id="defs1"><linearGradient
+       id="linearGradient317"
+       inkscape:collect="always"><stop
+         style="stop-color:#4169e1;stop-opacity:1;"
+         offset="0"
+         id="stop317" /><stop
+         style="stop-color:#7830ff;stop-opacity:1;"
+         offset="0.30706522"
+         id="stop318" /></linearGradient><linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient317"
+       id="linearGradient319"
+       gradientUnits="userSpaceOnUse"
+       x1="48.892353"
+       y1="240.82535"
+       x2="463.10764"
+       y2="240.82535"
+       gradientTransform="matrix(2.8040249,0,0,2.8040249,-23.149196,-419.28026)" /></defs><g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"><g
+       id="g1"><g
+         id="g9"
+         transform="matrix(0.50553155,0,0,0.50553155,-8.726843,126.2933)" /><g
+         id="g128"><path
+           style="fill:url(#linearGradient319);stroke:none;stroke-width:0.281016"
+           d="m 113.94618,399.73987 c 3e-5,1.1e-4 68.95096,-0.28881 68.95096,-0.28881 -0.32862,0.085 79.14474,-167.19702 79.14474,-167.19702 h 0.28099 c -0.005,5e-4 70.99872,166.35547 70.99853,166.35398 l 64.73242,0.56992 c -1.4898,-2.52359 -71.81915,-171.96495 -71.84158,-171.97437 l -61.36022,-0.28879 53.95519,-114.65475 H 255.0165 c -0.0609,0 -141.07029,287.47995 -141.07029,287.47995 z"
+           id="path317"
+           sodipodi:nodetypes="cccccccccccc" /></g></g></g></svg>
